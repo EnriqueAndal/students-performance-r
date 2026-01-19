@@ -1,8 +1,6 @@
 # Student performance analysis based on test preparation
 
-## Description
-
-The objective of this project was to perform an `Exploratory Data Analysis (EDA) using R` on a dataset containing students’ academic performance in mathematics, reading, and writing.
+## An `Exploratory Data Analysis (EDA) using R` on a dataset containing students’ academic performance in mathematics, reading, and writing.
 
 The analysis compares students who completed a test preparation course with those who did not, in order to identify differences in performance and relationships between variables.
 
@@ -15,14 +13,14 @@ This project was developed to prove to myself that I could take the concepts and
 - Observations: 1,000 students
 
 - Main variables:
+  
+  - math.score ("integer")
 
-  - math.score
+  - reading.score ("integer")
 
-  - reading.score
+  - writing.score ("integer")
 
-  - writing.score
-
-  - test.preparation.course
+  - test.preparation.course ("character")
 
 ## Analysis Questions
 
@@ -46,20 +44,25 @@ This project was developed to prove to myself that I could take the concepts and
 
 ## Key Findings
 
-As stated before, the purpose of this project was to become familiar with R-specific functions and syntax. Therefore, the initial analytical questions were largely deduced by inspecting the variables and values within the dataset. Nevertheless, it was nice to confirm that these initial assumptions could be validated using mathematical tools and graphical visualizations that clearly illustrated the underlying patterns in the data.
+### 1. Differences in the math performance
 
-Therefore, I can state the following:
+A boxplot was used to compare math scores between students who completed the test preparation course and those who did not.
 
- - Students who completed the test preparation course achieved higher average scores across all three subjects.
+![Math scores comparison](images/math_boxplot.png)
 
- - Reading and writing scores show a strong positive relationship for both groups.
-
- - Score variability is similar regardless of test preparation status.
+The 358 students that completed the test show a higher average and more condensed results, with the lowest grade being close to 20.
+In contrast, we can see how the 642 that didn't do it make the results be less condensed, having outliers in a lower grade than the ones that appear on the alumni that did in fact the test.
 
 ## Tools Used
 
-R
+R & RStudio
 
 - Base R functions (apply, subset, factor)
 
 - Base R graphics (hist, boxplot, plot)
+
+## How to Test This Program on Your Own Computer
+
+To run this project on your local machine, make sure you have installed the tools and datasets described in the previous sections.
+
+You may also test the program using your own dataset. In that case, the dataset must contain the required columns used throughout the analysis and those columns must have compatible data types. Otherwise, the program will stop execution to prevent incorrect results.
