@@ -1,11 +1,37 @@
 # Student performance analysis based on test preparation
 
-## An `Exploratory Data Analysis (EDA) using R` on a dataset containing students’ academic performance in mathematics, reading, and writing.
+---
 
-The analysis compares students who completed a test preparation course with those who did not, in order to identify differences in performance and relationships between variables.
+## Project Description
+This project performs an exploratory data analysis (EDA) on a dataset containing students’ academic performance in mathematics, reading, and writing.  
 
-This project was developed to prove to myself that I could take the concepts and notes from the Coursera course _Introduction to Data Science: Statistical Programming with R_ and apply them to a real-world project—one that I built independently. The goal was to reinforce my understanding of the language while navigating different references and resources to develop a functional and coherent analysis as my first hands-on approach to R.
-Additionally, this project represents my first exposure to both Kaggle and GitHub, allowing me to become familiar with modern tools that are widely used in the industry and that serve as a valuable complement to my university studies.
+The analysis compares students who completed a test preparation course with those who did not, in order to identify differences in performance and relationships between variables.  
+
+This project was developed to apply the concepts and notes from the Coursera course _Introduction to Data Science: Statistical Programming with R_ to a real-world dataset. 
+It allowed me to practice R programming, data exploration, and visualization techniques, reinforcing my understanding of statistical analysis in a hands-on way.
+
+---
+
+## Objectives
+The main objectives of this project are:
+
+- Explore student performance data and identify patterns related to test preparation.
+- Calculate descriptive statistics and visualize distributions of scores.
+- Compare groups of students to assess the impact of completing a test preparation course.
+- Examine relationships between academic performance variables.
+- Gain practical experience in applying R, base graphics, and data handling in real-world projects.
+
+---
+
+## Project Structure
+```bash
+├── Student_Performance_EDA/
+│   ├── student_performance_analysis.R   # Main R script for EDA
+│   ├── README.md                         # Project documentation
+│   └── dataset/                           # Dataset folder (if included)
+│   │   └── students_performance.csv
+└────── images/                            # Contains the plots used in the README
+```
 
 ## Dataset
 
@@ -23,6 +49,8 @@ Additionally, this project represents my first exposure to both Kaggle and GitHu
 
   - test.preparation.course ("character")
 
+---
+
 ## Analysis Questions
 
 1. Are there differences in math performance between students who completed the test preparation course and those who did not?
@@ -33,6 +61,8 @@ Additionally, this project represents my first exposure to both Kaggle and GitHu
 
 4. What is the relationship between reading and writing scores?
 
+---
+
 ## Methodology
 
 1. We load the dataset and perform an initial exploration to ensure that the data has been successfully imported into the R environment and to understand its structure and variables.
@@ -42,6 +72,8 @@ Additionally, this project represents my first exposure to both Kaggle and GitHu
 3. Using built-in R functions, we calculate descriptive statistics such as the mean, median, and standard deviation for each data subset.
    
 4. The numerical results are corroborated through graphical visualizations using base R graphics, including histograms, boxplots, and scatter plots.
+
+---
 
 ## Key Findings
 
@@ -79,6 +111,8 @@ Scatter plots were used to explore the relationship between reading and writing 
 Both groups exhibit a positive relationship between reading and writing scores. However, the presence of several outliers prevents this relationship from being interpreted as a strict rule.
 While higher reading scores often coincide with higher writing scores, the dispersion of the data suggests that this association should be interpreted with caution.
 
+---
+
 ## Tools Used
 
 R & RStudio
@@ -86,6 +120,8 @@ R & RStudio
 - Base R functions (apply, subset, factor)
 
 - Base R graphics (hist, boxplot, plot)
+
+---
 
 ## How to Test This Program on Your Own Computer
 
