@@ -115,7 +115,7 @@ While higher reading scores often coincide with higher writing scores, the dispe
 
 ## Tools Used
 
-R & RStudio
+**R & RStudio**
 
 - Base R functions (apply, subset, factor)
 
