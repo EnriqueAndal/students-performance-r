@@ -25,7 +25,7 @@ The main objectives of this project are:
 
 ## Project Structure
 ```bash
-├── Student_Performance_EDA/
+├── student-performance-r/
 │   ├── student_performance_analysis.R   # Main R script for EDA
 │   ├── README.md                         # Project documentation
 │   └── dataset/                           # Dataset folder (if included)
